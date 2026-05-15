@@ -7,14 +7,14 @@ export function ContactSection() {
       id="contact"
       className="scroll-mt-24 border-t border-emerald-950/10 bg-white px-5 py-20 sm:px-8"
     >
-      <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-[0.45fr_0.55fr] md:items-end">
+      <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-[0.45fr_0.55fr] md:items-center">
         <div>
           <h2 className="mb-5 text-4xl font-bold tracking-tight text-emerald-950">
             Kontakt
           </h2>
           <p className="max-w-md text-lg leading-8 text-emerald-950/70">
-            Chcesz porozmawiać o projekcie, współpracy albo frontendzie?
-            Najłatwiej złapiesz mnie przez e-mail, LinkedIn albo GitHub.
+            Masz pomysł na ciekawy projekt? Chcesz porozmawiać
+            o&nbsp;współpracy? Napisz do mnie!
           </p>
         </div>
         <div className="space-y-5 border border-emerald-800/15 bg-[#e2f3e4] p-6">

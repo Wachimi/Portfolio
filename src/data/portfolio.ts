@@ -1,7 +1,7 @@
 export const siteOwner = "Andrzej Kuśnierz";
 
 export const navItems = [
-  { href: "#about", label: "O MNIE" },
+  { href: "#about", label: "O\u00A0MNIE" },
   { href: "#skills", label: "UMIEJĘTNOŚCI" },
   { href: "#projects", label: "PROJEKTY" },
   { href: "#contact", label: "KONTAKT" },
@@ -14,28 +14,34 @@ export const skills = [
   "TypeScript",
   "React",
   "Next.js",
-  "Tailwind CSS",
   "Responsive UI",
+  "WordPress",
 ];
 
 export const projects = [
   {
-    title: "Portfolio osobiste",
+    title: "Strona firmowa",
+    image: "/projects/marsoft.png",
+    href: "https://marsoft.eu",
     description:
-      "Nowoczesna strona prezentująca profil, umiejętności, projekty oraz dane kontaktowe.",
-    status: "W trakcie",
+      "Responsywna strona z\u00A0aktualnościami i\u00A0dedykowanymi zakładkami",
+    status: "Wykonana",
   },
   {
-    title: "Aplikacja webowa",
+    title: "Strona fundacji",
+    image: "/projects/fzii.png",
+    href: "https://fzii.com.pl",
     description:
-      "Miejsce na większy projekt z logiką, komponentami i praktycznym użyciem Reacta.",
-    status: "Plan",
+      "Responsywna strona z\u00A0aktualnościami i\u00A0dedykowanymi zakładkami",
+    status: "Wykonana",
   },
   {
-    title: "Mini projekt UI",
+    title: "Platforma e-learningowa",
+    image: "/projects/moodle_aktywna_edukacja.png",
+    href: "https://przedsiebiorcy-aktywnaedukacja.pl/",
     description:
-      "Krótki projekt do ćwiczenia layoutu, interakcji i dopracowania detali wizualnych.",
-    status: "Plan",
+      "Platforma do prowadzenia szkoleń on-line",
+    status: "Wykonana",
   },
 ];
 

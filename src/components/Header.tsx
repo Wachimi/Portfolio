@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { navItems, siteOwner } from "@/data/portfolio";
 
 export function Header() {
@@ -6,9 +7,9 @@ export function Header() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <a
           href="#"
-          className="text-sm font-extrabold uppercase tracking-[0.24em] text-emerald-50"
+          className="flex items-center transition-opacity hover:opacity-85"
         >
-          {siteOwner}
+          <Image src="/icon.svg" alt={siteOwner} width={42} height={42} priority />
         </a>
 
         <div className="hidden items-center gap-6 text-sm font-semibold text-white md:flex">
