@@ -21,8 +21,44 @@ html {
   scroll-behavior: smooth;
 }
 
+.site-load-header {
+  animation: site-load-header 520ms ease-out both;
+}
+
+.site-load-up {
+  animation: site-load-up 700ms ease-out both;
+}
+
+.site-load-delay-1 {
+  animation-delay: 160ms;
+}
+
 .hero-floating-glow {
   animation: hero-floating-glow 10s ease-in-out infinite alternate;
+}
+
+@keyframes site-load-header {
+  from {
+    opacity: 0;
+    transform: translateY(-0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes site-load-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-circuit-pulse {
@@ -121,6 +157,8 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .site-load-header,
+  .site-load-up,
   .hero-floating-glow,
   .hero-circuit-pulse,
   .hero-code-float {

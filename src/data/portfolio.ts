@@ -25,7 +25,7 @@ export const projects = [
     href: "https://marsoft.eu",
     description:
       "Responsywna strona z\u00A0aktualnościami i\u00A0dedykowanymi zakładkami",
-    status: "Wykonana",
+    status: "WordPress",
   },
   {
     title: "Strona fundacji",
@@ -33,7 +33,7 @@ export const projects = [
     href: "https://fzii.com.pl",
     description:
       "Responsywna strona z\u00A0aktualnościami i\u00A0dedykowanymi zakładkami",
-    status: "Wykonana",
+    status: "WordPress",
   },
   {
     title: "Platforma e-learningowa",
@@ -41,7 +41,7 @@ export const projects = [
     href: "https://przedsiebiorcy-aktywnaedukacja.pl/",
     description:
       "Platforma do prowadzenia szkoleń on-line",
-    status: "Wykonana",
+    status: "Moodle",
   },
 ];
 

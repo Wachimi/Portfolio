@@ -67,7 +67,7 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto grid min-h-[70vh] max-w-6xl grid-rows-[1fr_auto] px-5 pb-8 pt-24 sm:px-8 lg:min-h-[74vh] lg:pb-10 lg:pt-24">
-        <div className="flex flex-col justify-center">
+        <div className="site-load-up flex flex-col justify-center">
           <p className="mb-2 text-sm font-bold uppercase tracking-[0.28em] text-emerald-700">
             Web Developer
           </p>
@@ -80,7 +80,7 @@ export function HeroSection() {
             nad którymi pracowałem.
           </p>
         </div>
-        <h1 className="mx-auto max-w-5xl border border-emerald-700/15 bg-white/75 px-4 py-3 text-center text-2xl font-extrabold leading-tight text-emerald-950 shadow-lg shadow-emerald-950/5 backdrop-blur-md sm:text-3xl lg:text-[2.15rem] xl:text-4xl">
+        <h1 className="site-load-up site-load-delay-1 mx-auto max-w-5xl border border-emerald-700/15 bg-white/75 px-4 py-3 text-center text-2xl font-extrabold leading-tight text-emerald-950 shadow-lg shadow-emerald-950/5 backdrop-blur-md sm:text-3xl lg:text-[2.15rem] xl:text-4xl">
           <span className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
             {heroTechnologies.map((technology, index) => (
               <span key={technology} className="flex items-center gap-x-3">

@@ -11,7 +11,7 @@ export function ProjectsSection() {
         <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <h2 className="text-4xl font-bold tracking-tight">Projekty</h2>
           <p className="max-w-lg text-base leading-7 text-emerald-100/75">
-            Na razie to projekty, które realizowałem zanim rozpocząłem przygodę
+            To projekty, które realizowałem zanim rozpocząłem przygodę
             prawdziwego &quot;web developera&quot;.
           </p>
         </div>
