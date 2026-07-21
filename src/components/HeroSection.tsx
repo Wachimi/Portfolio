@@ -5,7 +5,7 @@ const heroTechnologies = [
   "CSS",
   "JS/TS",
   "React",
-  "Next.js",
+  "Next.js / Vite",
   "WordPress",
 ];
 
@@ -75,8 +75,8 @@ export function HeroSection() {
             {siteOwner}
           </p>
           <p className="mt-6 max-w-xl border-l-4 border-emerald-500 bg-[#eef8ee]/70 pl-6 text-lg leading-8 text-emerald-950/75 backdrop-blur-sm">
-            Cześć, zapraszam do zapoznania się z moim osobistym portfolio.
-            Znajdziesz tu informacje o moich umiejętnościach, doświadczeniu oraz projektach,
+            Cześć, zapraszam do zapoznania się z&nbsp;moim osobistym portfolio.
+            Znajdziesz tu informacje o&nbsp;moich umiejętnościach, doświadczeniu oraz projektach,
             nad którymi pracowałem.
           </p>
         </div>

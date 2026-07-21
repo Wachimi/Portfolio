@@ -9,11 +9,11 @@ export function AboutSection() {
           O&nbsp;mnie
         </h2>
         <div className="space-y-6">
-          <p className="text-3xl font-bold leading-tight text-emerald-950">
+          <p className="text-2xl font-bold leading-tight text-emerald-950">
             Od początku swojej zawodowej pracy tworzę strony internetowe.
             Zaczynałem od pracy z&nbsp;frameworkiem WordPress, teraz skupiam
-            się na pisaniu własnych stron i&nbsp;aplikacji od podstaw
-            z&nbsp;wykorzystaniem Reacta i&nbsp;Next.js.
+            się na pisaniu własnych stron i&nbsp;aplikacji od podstaw w&nbsp;JS/TS
+            z&nbsp;wykorzystaniem React i&nbsp;Next.js / Vite.
           </p>
           <p className="max-w-3xl text-lg leading-8 text-emerald-950/70">
             Lubię pracować etapami: najpierw dobra struktura, potem czytelny

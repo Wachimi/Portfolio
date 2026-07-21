@@ -39,7 +39,7 @@ export function ContactSection() {
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-700/75">
                     {link.label}
                   </p>
-                  <span className="mt-1 block break-words text-lg font-bold sm:text-xl">
+                  <span className="mt-1 block wbreak-words text-lg font-bold sm:text-xl">
                     {link.value}
                   </span>
                 </div>

@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
+import { CvSection } from "@/components/CvSection";
 import { Footer } from "@/components/Footer";
 import { GitHubActivitySection } from "@/components/GitHubActivitySection";
 import { Header } from "@/components/Header";
@@ -17,6 +18,7 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <GitHubActivitySection />
+      <CvSection />
       <ContactSection />
       <Footer />
       <ScrollToTopButton />
