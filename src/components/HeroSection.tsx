@@ -18,11 +18,11 @@ export function HeroSection() {
       />
       <div
         aria-hidden="true"
-        className="hero-floating-glow absolute left-[-10rem] top-24 -z-10 h-80 w-80 rounded-full bg-lime-300/30 blur-3xl"
+        className="hero-floating-glow absolute -left-40 top-24 -z-10 h-80 w-80 rounded-full bg-lime-300/30 blur-3xl"
       />
       <div
         aria-hidden="true"
-        className="hero-floating-glow absolute bottom-10 right-[-8rem] -z-10 h-96 w-96 rounded-full bg-emerald-400/25 blur-3xl [animation-delay:-4s]"
+        className="hero-floating-glow absolute -right-32 bottom-10 -z-10 h-96 w-96 rounded-full bg-emerald-400/25 blur-3xl [animation-delay:-4s]"
       />
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <span className="hero-circuit-pulse hero-circuit-pulse-horizontal left-[8%] top-[32%] w-40" />
@@ -32,9 +32,9 @@ export function HeroSection() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute right-0 top-20 -z-10 hidden w-[48rem] max-w-[58vw] lg:block"
+        className="absolute right-0 top-20 -z-10 hidden w-3xl max-w-[58vw] lg:block"
       >
-        <div className="hero-code-float rotate-[-6deg] border border-emerald-700/20 bg-white/70 p-4 shadow-2xl shadow-emerald-950/10 backdrop-blur-md">
+        <div className="hero-code-float -rotate-6 border border-emerald-700/20 bg-white/70 p-4 shadow-2xl shadow-emerald-950/10 backdrop-blur-md">
           <div className="mb-4 flex gap-2">
             <span className="h-3 w-3 rounded-full bg-emerald-300" />
             <span className="h-3 w-3 rounded-full bg-lime-300" />

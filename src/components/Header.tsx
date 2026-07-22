@@ -21,7 +21,7 @@ export function Header() {
             width={42}
             height={42}
             priority
-            className="block h-9 w-9 sm:h-[42px] sm:w-[42px]"
+            className="block h-9 w-9 sm:h-10.5 sm:w-10.5"
           />
         </a>
 
@@ -48,17 +48,17 @@ export function Header() {
           <span className="relative h-4 w-5">
             <span
               className={`absolute left-0 top-0 h-0.5 w-5 bg-current transition-transform duration-300 ${
-                isMenuOpen ? "translate-y-[7px] rotate-45" : ""
+                isMenuOpen ? "translate-y-1.75 rotate-45" : ""
               }`}
             />
             <span
-              className={`absolute left-0 top-[7px] h-0.5 w-5 bg-current transition-opacity duration-300 ${
+              className={`absolute left-0 top-1.75 h-0.5 w-5 bg-current transition-opacity duration-300 ${
                 isMenuOpen ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
               className={`absolute bottom-0 left-0 h-0.5 w-5 bg-current transition-transform duration-300 ${
-                isMenuOpen ? "-translate-y-[7px] -rotate-45" : ""
+                isMenuOpen ? "-translate-y-1.75 -rotate-45" : ""
               }`}
             />
           </span>
