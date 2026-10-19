@@ -1,0 +1,39 @@
+name: Odśwież podglądy realizacji
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-previews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pobierz repozytorium
+        uses: actions/checkout@v4
+
+      - name: Skonfiguruj Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Wykonaj aktualne podglądy
+        run: node scripts/capture-project-previews.mjs
+
+      - name: Zapisz zmienione obrazy
+        shell: bash
+        run: |
+          if git diff --quiet -- public/projects; then
+            echo "Podglądy nie zmieniły się."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/projects
+          git commit -m "chore: odśwież podglądy realizacji"
+          git push

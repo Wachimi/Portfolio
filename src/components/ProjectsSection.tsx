@@ -2,12 +2,12 @@ import Image from "next/image";
 import { type Project, projects } from "@/data/portfolio";
 
 const projectCardClassName =
-  "group flex h-full min-h-96 flex-col overflow-hidden border border-white/70 bg-white text-emerald-950 shadow-xl shadow-emerald-950/12 transition-all duration-300 hover:-translate-y-1 hover:border-lime-200 hover:shadow-2xl hover:shadow-emerald-950/20";
+  "group relative flex h-full min-h-96 flex-col overflow-hidden border border-white/15 bg-brand-paper text-brand-ink transition-transform duration-300 hover:-translate-y-1";
 
 function ProjectCardContent({ project }: { project: Project }) {
   return (
     <>
-      <div className="relative aspect-video overflow-hidden bg-emerald-950/10">
+      <div className="relative aspect-video overflow-hidden bg-brand-panel">
         <Image
           src={project.image}
           alt={`Podgląd projektu: ${project.title}`}
@@ -18,17 +18,23 @@ function ProjectCardContent({ project }: { project: Project }) {
         />
       </div>
       <div className="flex flex-1 flex-col justify-between p-6">
+        <span className="absolute inset-x-0 top-0 z-10 h-1 origin-left scale-x-0 bg-brand-lime transition-transform duration-300 group-hover:scale-x-100" />
         <div>
-          <span className="mb-5 inline-flex border border-emerald-600/20 bg-emerald-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-emerald-700">
+          <span className="mb-5 inline-flex border border-brand-green/20 bg-brand-lime-soft px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-brand-deep">
             {project.status}
           </span>
           <h3 className="text-2xl font-bold">{project.title}</h3>
+          {project.teamProject ? (
+            <p className="mt-4 inline-flex items-center gap-2 border-l-2 border-brand-lime pl-3 text-xs font-extrabold uppercase tracking-[0.12em] text-brand-green">
+              Jako członek zespołu
+            </p>
+          ) : null}
         </div>
-        <p className="mt-8 leading-7 text-emerald-950/70">
+        <p className="mt-8 leading-7 text-brand-ink/65">
           {project.description}
         </p>
-        <span className="mt-6 inline-flex text-sm font-bold uppercase tracking-[0.18em] text-emerald-700 transition-colors group-hover:text-emerald-950">
-          {project.href ? "Zobacz projekt" : "W przygotowaniu"}
+        <span className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.14em] text-brand-green transition-colors group-hover:text-brand-ink">
+          {project.href ? "Zobacz projekt ↗" : "W przygotowaniu"}
         </span>
       </div>
     </>
@@ -39,12 +45,19 @@ export function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="scroll-mt-24 border-t border-emerald-950/10 bg-emerald-800 px-5 py-20 text-white sm:px-8"
+      className="scroll-mt-24 border-t border-white/10 bg-brand-ink px-5 py-24 text-white sm:px-8 lg:py-32"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <h2 className="text-4xl font-bold tracking-tight">Projekty</h2>
-          <p className="max-w-lg text-base leading-7 text-emerald-100/75">
+        <div className="mb-12 grid gap-6 md:grid-cols-[0.6fr_0.4fr] md:items-end">
+          <div>
+            <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-lime">
+              02 / Realizacje
+            </p>
+            <h2 className="text-4xl font-black leading-tight tracking-[-0.03em] sm:text-5xl">
+              Projekty, które pokazują możliwości.
+            </h2>
+          </div>
+          <p className="max-w-lg text-base leading-7 text-white/65 md:justify-self-end">
             Wybrane realizacje: od stron firmowych i&nbsp;platform e-learningowych
             po aplikacje webowe budowane w&nbsp;nowoczesnym stacku.
           </p>

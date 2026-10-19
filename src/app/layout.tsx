@@ -9,8 +9,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Andrzej Kuśnierz | Portfolio",
-  description: "Portfolio osobiste Andrzeja Kuśnierza.",
+  title: "AK.dev | Strony i aplikacje internetowe na zamówienie",
+  description:
+    "Projektowanie i wdrażanie nowoczesnych stron oraz aplikacji internetowych.",
+  icons: {
+    icon: "/06_symbol_AK_kod_przezroczysty.png",
+    apple: "/06_symbol_AK_kod_przezroczysty.png",
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={montserrat.variable}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }

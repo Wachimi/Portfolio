@@ -1,11 +1,12 @@
 export const siteOwner = "mgr inż. Andrzej Kuśnierz";
 
 export const navItems = [
-  { href: "#about", label: "O\u00A0MNIE" },
-  { href: "#skills", label: "UMIEJĘTNOŚCI" },
-  { href: "#projects", label: "PROJEKTY" },
+  { href: "#offer", label: "Oferta" },
+  { href: "#projects", label: "Realizacje" },
+  { href: "#skills", label: "Technologie" },
+  { href: "#about", label: "O\u00A0mnie" },
   { href: "#cv", label: "CV" },
-  { href: "#contact", label: "KONTAKT" },
+  { href: "#contact", label: "Kontakt" },
 ];
 
 export const cvFile = {
@@ -24,39 +25,90 @@ export const skills = [
   "WordPress",
 ];
 
+export const offerServices = [
+  {
+    title: "Landing page i\u00A0strony firmowe",
+    description:
+      "Profesjonalna, responsywna strona, która jasno przedstawia ofertę, buduje wiarygodność marki i\u00A0prowadzi odbiorcę do kontaktu.",
+  },
+  {
+    title: "Zaawansowane strony i\u00A0aplikacje z\u00A0CMS",
+    description:
+      "Rozbudowane rozwiązania z\u00A0indywidualnymi funkcjami oraz panelem do wygodnego zarządzania treścią, aktualnościami lub blogiem.",
+  },
+  {
+    title: "WordPress — administracja i\u00A0rozwój",
+    description:
+      "Opieka nad istniejącą stroną, aktualizacje, rozbudowa funkcji i\u00A0bieżące usprawnienia bez konieczności tworzenia serwisu od nowa.",
+  },
+  {
+    title: "Indywidualne projekty IT",
+    description:
+      "Niestandardowe narzędzia i\u00A0rozwiązania webowe dopasowane do konkretnego procesu, pomysłu lub potrzeb organizacji.",
+  },
+];
+
+export const additionalServices = [
+  "Opieka techniczna",
+  "Rozwój istniejącej strony",
+  "Podstawowa optymalizacja SEO",
+  "Integracje z zewnętrznymi usługami",
+  "Migracje i wdrożenia",
+  "Przenoszenie treści i danych",
+];
+
 export type Project = {
   title: string;
   image: string;
   description: string;
   status: string;
+  teamProject?: boolean;
   href?: string;
   loading?: "eager" | "lazy";
 };
 
 export const projects: Project[] = [
   {
+    title: "Galeria Sztuki Witryna",
+    image: "/projects/galeria-witryna_16x9.png",
+    href: "https://www.galeriawitryna.pl/",
+    description:
+      "Nowoczesna strona galerii sztuki z\u00A0katalogiem artystów i\u00A0dzieł oraz dedykowanym panelem zarządzania treścią.",
+    status: "Next.js / Supabase",
+    loading: "eager",
+  },
+  {
     title: "System ERP ITC",
     image: "/projects/erp_16x9.png",
     href: "https://erp-client-omega.vercel.app/",
     description:
-      "Frontend systemu wspierającego organizację procesów firmowych i\u00A0pracę z\u00A0danymi operacyjnymi.",
-    status: "TypeScript / Vite",
+      "System ERP ITC obejmujący ponad 15 modułów wspierających procesy firmowe i\u00A0pracę z\u00A0danymi operacyjnymi.",
+    status: "React / TypeScript / Vite",
+    teamProject: true,
+  },
+  {
+    title: "System ERP WorkHub",
+    image: "/projects/workhub_16x9.png",
+    href: "https://work-hub-client.vercel.app/",
+    description:
+      "WorkHub to narzędzie łączące w\u00A0jednym panelu ewidencję czasu pracy, komunikację, obsługę nieobecności i\u00A0raportowanie.",
+    status: "React / TypeScript / Vite",
+    teamProject: true,
   },
   {
     title: "Platforma/sklep LapSoft",
     image: "/projects/lapsoft_16x9.png",
-    href: "https://lap-soft.vercel.app/",
-    description:
-      "Platforma wynajmu sprzętu z\u00A0układem produktowym, przygotowana jako nowoczesny sklep internetowy.",
-    status: "TypeScript / Next.js",
-    loading: "eager",
+    href: "https://www.lapsoft.pl/",
+    description: "Platforma wynajmu sprzętu komputerowego.",
+    status: "Next.js / TypeScript",
+    teamProject: true,
   },
   {
     title: "Aplikacja To-Do",
     image: "/projects/todo_16x9.png",
     href: "https://todo-app-ts-rust.vercel.app/",
     description:
-      "Lista zadań rozwijana jako przydatne narzędzie do codziennej organizacji czasu pracy.",
+      "Aplikacja do zarządzania zadaniami z\u00A0priorytetami, filtrowaniem, statystykami i\u00A0zapisem danych w\u00A0przeglądarce.",
     status: "TypeScript",
   },
   {
@@ -64,7 +116,7 @@ export const projects: Project[] = [
     image: "/projects/marsoft_16x9.png",
     href: "https://marsoft.eu",
     description:
-      "Responsywna strona z\u00A0aktualnościami i\u00A0dedykowanymi zakładkami",
+      "Serwis firmy doradczo-szkoleniowej prezentujący ofertę konsultingu biznesowego, realizowane projekty i\u00A0aktualności.",
     status: "WordPress",
   },
   {
@@ -72,7 +124,7 @@ export const projects: Project[] = [
     image: "/projects/fzii_16x9.png",
     href: "https://fzii.com.pl",
     description:
-      "Responsywna strona z\u00A0aktualnościami i\u00A0dedykowanymi zakładkami",
+      "Serwis Fundacji Zarządzania i\u00A0Innowacji prezentujący jej działalność, aktualne projekty oraz inicjatywy społeczne.",
     status: "WordPress",
   },
   {
@@ -80,7 +132,15 @@ export const projects: Project[] = [
     image: "/projects/moodle_aktywna_edukacja_16x9.png",
     href: "https://przedsiebiorcy-aktywnaedukacja.pl/",
     description:
-      "Platforma do prowadzenia szkoleń on-line",
+      "Platforma szkoleniowa poświęcona edukacji ekologicznej przedsiębiorców, udostępniająca kursy i\u00A0ogłoszenia związane z\u00A0projektem.",
+    status: "Moodle",
+  },
+  {
+    title: "Platforma e-learningowa BCU Lublin",
+    image: "/projects/moodle_bcu_lublin_16x9.png",
+    href: "https://moodle-bcu-lublin.pl/",
+    description:
+      "Platforma Moodle Branżowego Centrum Umiejętności wspierająca kształcenie i\u00A0egzaminowanie w\u00A0branży budowlanej.",
     status: "Moodle",
   },
 ];
@@ -88,8 +148,8 @@ export const projects: Project[] = [
 export const contactLinks = [
   {
     label: "E-mail",
-    value: "andrzej.kusnierz@icloud.com",
-    href: "mailto:andrzej.kusnierz@icloud.com",
+    value: "a.kusnierz.work@icloud.com",
+    href: "mailto:a.kusnierz.work@icloud.com",
     icon: "email",
   },
   {

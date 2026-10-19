@@ -31,7 +31,7 @@ export function ContactIcon({ icon }: ContactIconProps) {
     <svg
       aria-hidden="true"
       viewBox="0 0 24 24"
-      className="h-8 w-8 shrink-0 fill-emerald-700"
+      className="h-8 w-8 shrink-0 fill-brand-green"
     >
       <path d="M3 5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25v13.5A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25Zm2.25-.75a.75.75 0 0 0-.75.75v.43l7.5 4.63 7.5-4.63v-.43a.75.75 0 0 0-.75-.75H5.25Zm14.25 2.94-7.1 4.38a.75.75 0 0 1-.8 0L4.5 7.44v11.31c0 .41.34.75.75.75h13.5c.41 0 .75-.34.75-.75V7.44Z" />
     </svg>

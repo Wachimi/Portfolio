@@ -8,33 +8,41 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="site-load-header fixed inset-x-0 top-0 z-50 border-b border-emerald-200/15 bg-emerald-950/95 text-white backdrop-blur-xl">
-      <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5 sm:h-16 sm:px-8">
+    <header className="site-load-header fixed inset-x-0 top-0 z-50 border-b border-brand-ink/10 bg-brand-paper/95 text-brand-ink backdrop-blur-xl">
+      <nav className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8">
         <a
           href="#"
-          className="flex h-full items-center transition-opacity hover:opacity-85"
+          aria-label="Przejdź na początek strony"
+          className="relative h-14 w-48 overflow-hidden transition-opacity hover:opacity-80"
           onClick={() => setIsMenuOpen(false)}
         >
           <Image
-            src="/icon.svg"
+            src="/01_logo_poziome_przezroczyste.png"
             alt={siteOwner}
-            width={42}
-            height={42}
+            width={3200}
+            height={920}
             priority
-            className="block h-9 w-9 sm:h-10.5 sm:w-10.5"
+            sizes="280px"
+            className="absolute left-0 top-1/2 h-auto w-[280px] max-w-none -translate-y-1/2"
           />
         </a>
 
-        <div className="hidden items-center gap-6 text-sm font-semibold text-white md:flex">
-          {navItems.map((item) => (
+        <div className="hidden items-center gap-5 text-xs font-bold uppercase tracking-[0.12em] md:flex lg:gap-7">
+          {navItems.filter((item) => item.href !== "#contact").map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="transition-colors hover:text-lime-200"
+              className="transition-colors hover:text-brand-green"
             >
               {item.label}
             </a>
           ))}
+          <a
+            href="#contact"
+            className="bg-brand-ink px-5 py-3 text-white transition-colors hover:bg-brand-green"
+          >
+            Porozmawiajmy
+          </a>
         </div>
 
         <button
@@ -43,7 +51,7 @@ export function Header() {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
           onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
-          className="grid h-9 w-9 place-items-center self-center border border-emerald-100/20 text-emerald-50 transition-colors hover:border-lime-200/50 hover:text-lime-200 md:hidden"
+          className="grid h-10 w-10 place-items-center self-center border border-brand-ink/20 text-brand-ink transition-colors hover:border-brand-green hover:text-brand-green md:hidden"
         >
           <span className="relative h-4 w-5">
             <span
@@ -67,19 +75,23 @@ export function Header() {
 
       <div
         id="mobile-menu"
-        className={`overflow-hidden bg-emerald-950 px-5 transition-[max-height,opacity,padding] duration-300 md:hidden ${
+        className={`overflow-hidden bg-brand-paper px-5 transition-[max-height,opacity,padding] duration-300 md:hidden ${
           isMenuOpen
-            ? "max-h-80 border-t border-emerald-200/15 py-4 opacity-100"
+            ? "max-h-80 border-t border-brand-ink/10 py-4 opacity-100"
             : "max-h-0 py-0 opacity-0"
         }`}
       >
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 text-sm font-bold uppercase tracking-[0.18em] text-white">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 text-sm font-bold text-brand-ink">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setIsMenuOpen(false)}
-              className="border border-emerald-100/10 px-4 py-3 transition-colors hover:border-lime-200/45 hover:text-lime-200"
+              className={`border px-4 py-3 transition-colors ${
+                item.href === "#contact"
+                  ? "border-brand-ink bg-brand-ink text-white hover:bg-brand-green"
+                  : "border-brand-ink/10 hover:border-brand-green hover:text-brand-green"
+              }`}
             >
               {item.label}
             </a>

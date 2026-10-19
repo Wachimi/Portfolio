@@ -2,22 +2,22 @@ import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { CvSection } from "@/components/CvSection";
 import { Footer } from "@/components/Footer";
-import { GitHubActivitySection } from "@/components/GitHubActivitySection";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { OfferSection } from "@/components/OfferSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { SkillsSection } from "@/components/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#eef8ee] text-[#102018]">
+    <main className="min-h-screen bg-brand-paper text-brand-ink">
       <Header />
       <HeroSection />
-      <AboutSection />
-      <SkillsSection />
+      <OfferSection />
       <ProjectsSection />
-      <GitHubActivitySection />
+      <SkillsSection />
+      <AboutSection />
       <CvSection />
       <ContactSection />
       <Footer />
