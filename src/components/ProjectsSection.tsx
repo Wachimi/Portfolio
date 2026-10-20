@@ -48,7 +48,10 @@ export function ProjectsSection() {
       className="scroll-mt-24 border-t border-white/10 bg-brand-ink px-5 py-24 text-white sm:px-8 lg:py-32"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12 grid gap-6 md:grid-cols-[0.6fr_0.4fr] md:items-end">
+        <div
+          data-reveal="up"
+          className="mb-12 grid gap-6 md:grid-cols-[0.6fr_0.4fr] md:items-end"
+        >
           <div>
             <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green-light">
               02 / Realizacje
@@ -63,23 +66,29 @@ export function ProjectsSection() {
           </p>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) =>
-            project.href ? (
-              <a
-                key={project.title}
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={projectCardClassName}
-              >
-                <ProjectCardContent project={project} />
-              </a>
-            ) : (
-              <article key={project.title} className={projectCardClassName}>
-                <ProjectCardContent project={project} />
-              </article>
-            ),
-          )}
+          {projects.map((project, index) => (
+            <div
+              key={project.title}
+              data-reveal="up"
+              data-reveal-delay={String((index % 3) + 1)}
+              className="h-full"
+            >
+              {project.href ? (
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={projectCardClassName}
+                >
+                  <ProjectCardContent project={project} />
+                </a>
+              ) : (
+                <article className={projectCardClassName}>
+                  <ProjectCardContent project={project} />
+                </article>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

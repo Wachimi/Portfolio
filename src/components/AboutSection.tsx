@@ -5,7 +5,7 @@ export function AboutSection() {
       className="scroll-mt-24 border-t border-brand-line bg-white px-5 py-24 sm:px-8 lg:py-32"
     >
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.38fr_0.62fr] lg:gap-20">
-        <div>
+        <div data-reveal="left">
           <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green">
             04 / Podejście
           </p>
@@ -13,7 +13,11 @@ export function AboutSection() {
             Technologia, która wspiera konkretny cel.
           </h2>
         </div>
-        <div className="border-l-4 border-brand-green pl-6 sm:pl-9">
+        <div
+          data-reveal="right"
+          data-reveal-delay="1"
+          className="border-l-4 border-brand-green pl-6 sm:pl-9"
+        >
           <p className="text-2xl font-bold leading-tight text-brand-ink">
             Od początku swojej zawodowej pracy tworzę strony internetowe.
             Zaczynałem od pracy z&nbsp;frameworkiem WordPress, teraz skupiam

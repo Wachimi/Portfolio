@@ -7,7 +7,10 @@ export function OfferSection() {
       className="scroll-mt-24 border-t border-brand-line bg-brand-paper px-5 py-24 sm:px-8 lg:py-32"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12 grid gap-6 md:grid-cols-[0.6fr_0.4fr] md:items-end">
+        <div
+          data-reveal="up"
+          className="mb-12 grid gap-6 md:grid-cols-[0.6fr_0.4fr] md:items-end"
+        >
           <div>
             <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green">
               01 / Oferta
@@ -25,25 +28,32 @@ export function OfferSection() {
 
         <div className="grid gap-px overflow-hidden border border-brand-line bg-brand-line md:grid-cols-2">
           {offerServices.map((service, index) => (
-            <article
+            <div
               key={service.title}
-              className="group relative min-h-72 overflow-hidden bg-white p-7 transition-colors duration-300 hover:bg-brand-green-soft sm:p-8"
+              data-reveal="up"
+              data-reveal-delay={String((index % 2) + 1)}
+              className="h-full"
             >
-              <span className="absolute right-0 top-0 h-2 w-20 origin-right -skew-x-12 bg-brand-green transition-[width] duration-300 group-hover:w-36" />
-              <span className="mb-14 block text-xs font-extrabold tracking-[0.18em] text-brand-green">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <h3 className="max-w-md text-2xl font-black leading-tight tracking-[-0.02em] text-brand-ink">
-                {service.title}
-              </h3>
-              <p className="mt-5 max-w-xl leading-7 text-brand-ink/65">
-                {service.description}
-              </p>
-            </article>
+              <article className="group relative h-full min-h-72 overflow-hidden bg-white p-7 transition-colors duration-300 hover:bg-brand-green-soft sm:p-8">
+                <span className="absolute right-0 top-0 h-2 w-20 origin-right -skew-x-12 bg-brand-green transition-[width] duration-300 group-hover:w-36" />
+                <span className="mb-14 block text-xs font-extrabold tracking-[0.18em] text-brand-green">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="max-w-md text-2xl font-black leading-tight tracking-[-0.02em] text-brand-ink">
+                  {service.title}
+                </h3>
+                <p className="mt-5 max-w-xl leading-7 text-brand-ink/65">
+                  {service.description}
+                </p>
+              </article>
+            </div>
           ))}
         </div>
 
-        <div className="mt-8 grid overflow-hidden bg-brand-ink text-white lg:grid-cols-[0.38fr_0.62fr]">
+        <div
+          data-reveal="scale"
+          className="mt-8 grid overflow-hidden bg-brand-ink text-white lg:grid-cols-[0.38fr_0.62fr]"
+        >
           <div className="relative overflow-hidden border-b border-white/15 p-7 sm:p-9 lg:border-b-0 lg:border-r">
             <span className="absolute -bottom-20 -right-12 h-48 w-16 rotate-12 bg-brand-purple-light/15" />
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green-light">

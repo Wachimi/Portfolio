@@ -7,7 +7,7 @@ export function CvSection() {
       className="scroll-mt-24 border-t border-brand-line bg-brand-panel px-5 py-20 sm:px-8"
     >
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.64fr_0.36fr] md:items-center">
-        <div>
+        <div data-reveal="left">
           <p className="mb-4 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green">
             Więcej informacji
           </p>
@@ -20,7 +20,11 @@ export function CvSection() {
           </p>
         </div>
 
-        <div className="border border-brand-line bg-white p-6">
+        <div
+          data-reveal="right"
+          data-reveal-delay="1"
+          className="border border-brand-line bg-white p-6"
+        >
           <div className="mb-8 border-l-4 border-brand-green pl-5">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-green">
               Plik PDF

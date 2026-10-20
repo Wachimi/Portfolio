@@ -99,17 +99,19 @@ export const projects: Project[] = [
     title: "Platforma/sklep LapSoft",
     image: "/projects/lapsoft_16x9.png",
     href: "https://www.lapsoft.pl/",
-    description: "Platforma wynajmu sprzętu komputerowego.",
+    description:
+      "Platforma wynajmu sprzętu komputerowego z\u00A0obsługą logowania oraz dedykowanymi panelami klienta i\u00A0administratora.",
     status: "Next.js / TypeScript",
     teamProject: true,
   },
   {
-    title: "Aplikacja To-Do",
-    image: "/projects/todo_16x9.png",
-    href: "https://todo-app-ts-rust.vercel.app/",
+    title: "Szept Polesia — domki wypoczynkowe",
+    image: "/projects/szept-polesia_16x9.png",
+    href: "https://www.szeptpolesia.pl/",
     description:
-      "Aplikacja do zarządzania zadaniami z\u00A0priorytetami, filtrowaniem, statystykami i\u00A0zapisem danych w\u00A0przeglądarce.",
-    status: "TypeScript",
+      "Serwis wspierający wynajem domków wypoczynkowych, z\u00A0prezentacją oferty, galerią, kalendarzem dostępności i\u00A0formularzem zapytania o\u00A0rezerwację.",
+    status: "HTML / CSS / JavaScript",
+    teamProject: true,
   },
   {
     title: "Strona firmowa",

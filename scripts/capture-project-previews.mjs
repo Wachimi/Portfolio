@@ -24,9 +24,9 @@ const projects = [
     output: "public/projects/lapsoft_16x9.png",
   },
   {
-    slug: "todo",
-    url: "https://todo-app-ts-rust.vercel.app/",
-    output: "public/projects/todo_16x9.png",
+    slug: "szept-polesia",
+    url: "https://www.szeptpolesia.pl/",
+    output: "public/projects/szept-polesia_16x9.png",
   },
   {
     slug: "marsoft",

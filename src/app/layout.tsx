@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "AK.dev | Strony i aplikacje internetowe na zamówienie",
+  title: "AK-dev | Strony i aplikacje internetowe na zamówienie",
   description:
     "Projektowanie i wdrażanie nowoczesnych stron oraz aplikacji internetowych.",
   icons: {

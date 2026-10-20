@@ -8,7 +8,7 @@ export function ContactSection() {
       className="scroll-mt-24 border-t border-white/10 bg-brand-ink px-5 py-24 text-white sm:px-8 lg:py-32"
     >
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.48fr_0.52fr] md:items-center">
-        <div>
+        <div data-reveal="left">
           <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green-light">
             06 / Kontakt
           </p>
@@ -20,7 +20,11 @@ export function ContactSection() {
             o&nbsp;współpracy? Napisz do mnie!
           </p>
         </div>
-        <div className="space-y-5 border border-white/15 bg-white p-6 text-brand-ink sm:p-8">
+        <div
+          data-reveal="right"
+          data-reveal-delay="1"
+          className="space-y-5 border border-white/15 bg-white p-6 text-brand-ink sm:p-8"
+        >
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-green">
             Dane kontaktowe
           </p>
