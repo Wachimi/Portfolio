@@ -30,7 +30,7 @@ export function ScrollToTopButton() {
       type="button"
       aria-label="Wróć na górę strony"
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center border border-brand-lime bg-brand-ink text-brand-lime shadow-lg shadow-brand-ink/25 transition-all duration-300 hover:bg-brand-green hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-lime focus:ring-offset-2 focus:ring-offset-brand-paper ${
+      className={`fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center border border-brand-green-light bg-brand-ink text-brand-green-light shadow-lg shadow-brand-ink/25 transition-all duration-300 hover:bg-brand-green hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 focus:ring-offset-brand-paper ${
         isVisible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-4 opacity-0"

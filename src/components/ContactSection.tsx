@@ -9,7 +9,7 @@ export function ContactSection() {
     >
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.48fr_0.52fr] md:items-center">
         <div>
-          <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-lime">
+          <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green-light">
             06 / Kontakt
           </p>
           <h2 className="mb-6 text-4xl font-black leading-tight tracking-[-0.03em] sm:text-5xl">

@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-brand-ink px-5 py-8 text-white/55 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-3 border-b border-white/10 pb-6 text-left md:grid-cols-[minmax(0,0.22fr)_minmax(0,0.78fr)] md:gap-8">
-          <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-brand-lime">
+          <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-brand-green-light">
             Informacja prawna
           </p>
           <p className="max-w-4xl text-xs leading-6 text-white/60">

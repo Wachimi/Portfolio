@@ -1,0 +1,43 @@
+AK.dev — KOMPLET LOGO — 20.10.2026
+
+Główna identyfikacja: AK (sygnet) + .dev, bez powtarzania liter AK.
+W sygnecie programistyczny znak /> znajduje się po prawej stronie litery K.
+Podpis: STRONY I APLIKACJE INTERNETOWE
+
+PALETA
+Zielony podstawowy: #3A6117
+Fioletowy akcentowy: #3F1761
+Ciemne tło demonstracyjne: #170C1E
+Wariant podstawowy posiada delikatne jaśniejsze i ciemniejsze tony kolorów marki.
+Wersje na ciemnym tle stosują jaśniejsze odcienie zieleni i fioletu dla kontrastu.
+
+ZAWARTOŚĆ
+01 — logo poziome, transparentne (PNG, SVG)
+02 — logo poziome, białe tło (PNG, SVG)
+03 — logo poziome, ciemne tło (PNG, SVG)
+04 — logo pionowe, transparentne (PNG, SVG)
+05 — logo pionowe, ciemne tło (PNG, SVG)
+06 — sam sygnet AK/> na transparentnym tle (PNG, SVG)
+07 — sam sygnet na białym tle (PNG, SVG)
+08 — sam sygnet na ciemnym tle (PNG, SVG)
+09 — logo monochromatyczne czarne (PNG, SVG)
+10 — logo monochromatyczne białe (PNG, SVG)
+11 — biała wersja na ciemnym tle (PNG, SVG)
+12 — monochromatyczna zieleń (PNG, SVG)
+13 — logo pionowe na białym tle (PNG, SVG)
+14 — logo poziome bez podtytułu (PNG, SVG)
+15 — monochromatyczny fiolet (PNG, SVG)
+Ikony 16, 32, 48, 64, 128, 180, 192, 256 i 512 px, osobny SVG ikony.
+favicon.ico (wiele rozdzielczości), favicon-16x16.png, favicon-32x32.png,
+apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png.
+W folderze DODATKOWE_...: warianty z imieniem i nazwiskiem w pełnym brzmieniu.
+PODGLAD_WERSJI.jpg — karta podglądowa kilku wersji.
+
+WSKAZÓWKI
+• Do WWW i druku: używaj SVG, ponieważ to rzeczywista grafika wektorowa (ścieżki).
+• Do social mediów: PNG z odpowiednią rozdzielczością.
+• PNG przezroczyste mają faktyczny kanał alfa.
+• Na ciemne tło polecam wersję 11 (biała) lub 03 (kolorowa).
+• W plikach SVG litery zostały zamienione na ścieżki, więc zachowują kształt bez fontów.
+• Pliki są wykonane jako spójna rekonstrukcja wektorowa zaakceptowanej koncepcji,
+  z bazową geometrią sygnetu pochodzącą z wcześniejszego zestawu i nowym znakiem kodowym.

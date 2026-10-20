@@ -25,9 +25,9 @@ export function SkillsSection() {
           {skills.map((skill, index) => (
             <div
               key={skill}
-              className="group relative min-h-40 overflow-hidden bg-white px-6 py-6 text-lg font-extrabold text-brand-ink transition-colors duration-300 hover:bg-brand-lime-soft"
+              className="group relative min-h-40 overflow-hidden bg-white px-6 py-6 text-lg font-extrabold text-brand-ink transition-colors duration-300 hover:bg-brand-green-soft"
             >
-              <span className="absolute right-0 top-0 h-2 w-16 origin-right -skew-x-12 bg-brand-lime transition-[width] duration-300 group-hover:w-28" />
+              <span className="absolute right-0 top-0 h-2 w-16 origin-right -skew-x-12 bg-brand-green transition-[width] duration-300 group-hover:w-28" />
               <span className="mb-10 block text-xs font-extrabold text-brand-green">
                 {String(index + 1).padStart(2, "0")}
               </span>

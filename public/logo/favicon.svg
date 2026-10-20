@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="AK.dev — ikona"><title>AK.dev — ikona</title><defs>
+<linearGradient id="main" x1="0" y1="1" x2=".95" y2="0"><stop stop-color="#3A6117"/><stop offset=".55" stop-color="#598533"/><stop offset="1" stop-color="#3A6117"/></linearGradient>
+<linearGradient id="forest" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#23400F"/><stop offset="1" stop-color="#3A6117"/></linearGradient>
+<linearGradient id="kupper" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#3A6117"/><stop offset="1" stop-color="#527C27"/></linearGradient>
+<linearGradient id="accentGradient" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#3F1761"/><stop offset="1" stop-color="#58267B"/></linearGradient>
+<linearGradient id="mainDark" x1="0" y1="1" x2=".95" y2="0"><stop stop-color="#76A955"/><stop offset=".52" stop-color="#9BC77B"/><stop offset="1" stop-color="#74A34E"/></linearGradient>
+<linearGradient id="forestDark" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#4F7A31"/><stop offset="1" stop-color="#7EAD5F"/></linearGradient>
+<linearGradient id="kupperDark" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#6B9A45"/><stop offset="1" stop-color="#9BC77B"/></linearGradient>
+<linearGradient id="accentGradientDark" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#A476D0"/><stop offset="1" stop-color="#C6A2E5"/></linearGradient>
+</defs><g transform="translate(8.000 171.000) scale(0.900000)"><path d="M20 240 L148 20 Q153 12 162 20 L284 240 L227 240 L154 106 L79 240 Z" fill="url(#main)"/><path d="M20 240 L112 82 Q129 67 146 93 L154 106 L79 240 Z" fill="url(#forest)"/><path d="M106 240 L130 197 L183 197 L156 240 Z" fill="url(#forest)"/><path d="M244 112 L337 20 L408 20 L291 151 Z" fill="url(#kupper)"/><path d="M295 162 L350 110 L410 240 L346 240 Z" fill="url(#main)"/><path d="M440 88 L471 88 L439 239 L408 239 Z" fill="url(#accentGradient)"/><path d="M485 112 L550 170 L485 230 L463 209 L510 170 L463 135 Z" fill="url(#accentGradient)"/></g></svg>

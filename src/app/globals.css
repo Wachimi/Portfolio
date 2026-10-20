@@ -1,22 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f7f2;
-  --foreground: #06281f;
+  --background: #f7f8f4;
+  --foreground: #170c1e;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-montserrat);
-  --color-brand-ink: #06281f;
-  --color-brand-deep: #084d24;
-  --color-brand-green: #21851f;
-  --color-brand-lime: #61e000;
-  --color-brand-lime-soft: #dfffca;
-  --color-brand-paper: #f5f7f2;
-  --color-brand-panel: #e9eee7;
-  --color-brand-line: #cbd5ca;
+  --color-brand-ink: #170c1e;
+  --color-brand-deep: #23400f;
+  --color-brand-green: #3a6117;
+  --color-brand-green-light: #9bc77b;
+  --color-brand-green-soft: #eef3e9;
+  --color-brand-purple: #3f1761;
+  --color-brand-purple-light: #c6a2e5;
+  --color-brand-purple-soft: #f2ebf7;
+  --color-brand-paper: #f7f8f4;
+  --color-brand-panel: #eef1ea;
+  --color-brand-line: #d2d8cc;
 }
 
 body {
@@ -31,8 +34,8 @@ html {
 }
 
 ::selection {
-  background: #61e000;
-  color: #06281f;
+  background: #3f1761;
+  color: #ffffff;
 }
 
 .site-load-header {
@@ -47,13 +50,50 @@ html {
   animation-delay: 160ms;
 }
 
+.hero-brand-panels {
+  background: linear-gradient(
+    102deg,
+    transparent 0 56.5%,
+    #3f1761 56.5% 61.5%,
+    #3a6117 61.5% 100%
+  );
+}
+
+.hero-pointer-effect {
+  --hero-pointer-x: 50%;
+  --hero-pointer-y: 50%;
+
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle 7rem at var(--hero-pointer-x) var(--hero-pointer-y),
+      rgb(255 255 255 / 11%),
+      transparent 74%
+    ),
+    radial-gradient(
+      circle 16rem at var(--hero-pointer-x) var(--hero-pointer-y),
+      rgb(155 199 123 / 21%),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle 29rem at var(--hero-pointer-x) var(--hero-pointer-y),
+      rgb(63 23 97 / 9%),
+      transparent 72%
+    );
+  transition: opacity 220ms ease;
+}
+
+.hero-pointer-effect[data-active="true"] {
+  opacity: 1;
+}
+
 .hero-data-track {
   position: absolute;
   display: block;
   width: clamp(18rem, 38vw, 34rem);
   height: 2px;
   overflow: hidden;
-  background: rgb(6 40 31 / 13%);
+  background: rgb(23 12 30 / 13%);
   rotate: -12deg;
 }
 
@@ -62,8 +102,8 @@ html {
   display: block;
   width: 7rem;
   height: 3px;
-  background: rgb(97 224 0 / 90%);
-  box-shadow: 0 0 18px rgb(97 224 0 / 45%);
+  background: rgb(63 23 97 / 88%);
+  box-shadow: 0 0 18px rgb(63 23 97 / 38%);
   animation: hero-data-flow 8s linear infinite;
 }
 
@@ -107,7 +147,7 @@ html {
   display: block;
   width: 2px;
   height: 70%;
-  background: rgb(33 133 31 / 10%);
+  background: rgb(58 97 23 / 13%);
   rotate: 12deg;
   animation: hero-slash-drift 10s ease-in-out infinite alternate;
 }
@@ -174,5 +214,9 @@ html {
   .hero-data-track::after,
   .hero-brand-slash {
     animation: none;
+  }
+
+  .hero-pointer-effect {
+    display: none;
   }
 }

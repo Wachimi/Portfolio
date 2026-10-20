@@ -18,14 +18,14 @@ function ProjectCardContent({ project }: { project: Project }) {
         />
       </div>
       <div className="flex flex-1 flex-col justify-between p-6">
-        <span className="absolute inset-x-0 top-0 z-10 h-1 origin-left scale-x-0 bg-brand-lime transition-transform duration-300 group-hover:scale-x-100" />
+        <span className="absolute inset-x-0 top-0 z-10 h-1 origin-left scale-x-0 bg-brand-green transition-transform duration-300 group-hover:scale-x-100" />
         <div>
-          <span className="mb-5 inline-flex border border-brand-green/20 bg-brand-lime-soft px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-brand-deep">
+          <span className="mb-5 inline-flex border border-brand-purple/20 bg-brand-purple-soft px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-brand-purple">
             {project.status}
           </span>
           <h3 className="text-2xl font-bold">{project.title}</h3>
           {project.teamProject ? (
-            <p className="mt-4 inline-flex items-center gap-2 border-l-2 border-brand-lime pl-3 text-xs font-extrabold uppercase tracking-[0.12em] text-brand-green">
+            <p className="mt-4 inline-flex items-center gap-2 border-l-2 border-brand-green pl-3 text-xs font-extrabold uppercase tracking-[0.12em] text-brand-green">
               Jako członek zespołu
             </p>
           ) : null}
@@ -50,7 +50,7 @@ export function ProjectsSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 grid gap-6 md:grid-cols-[0.6fr_0.4fr] md:items-end">
           <div>
-            <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-lime">
+            <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green-light">
               02 / Realizacje
             </p>
             <h2 className="text-4xl font-black leading-tight tracking-[-0.03em] sm:text-5xl">

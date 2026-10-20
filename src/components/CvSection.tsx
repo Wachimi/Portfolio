@@ -21,7 +21,7 @@ export function CvSection() {
         </div>
 
         <div className="border border-brand-line bg-white p-6">
-          <div className="mb-8 border-l-4 border-brand-lime pl-5">
+          <div className="mb-8 border-l-4 border-brand-green pl-5">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-green">
               Plik PDF
             </p>
@@ -30,7 +30,7 @@ export function CvSection() {
           <a
             href={cvFile.href}
             download={cvFile.filename}
-            className="inline-flex w-full items-center justify-center bg-brand-ink px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition-colors hover:bg-brand-green sm:w-auto"
+            className="inline-flex w-full items-center justify-center bg-brand-green px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition-colors hover:bg-brand-purple sm:w-auto"
           >
             Pobierz CV
           </a>

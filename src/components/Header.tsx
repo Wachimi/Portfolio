@@ -1,31 +1,58 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+import { useState, type MouseEvent } from "react";
 import { navItems, siteOwner } from "@/data/portfolio";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  function handleLogoClick(event: MouseEvent<HTMLAnchorElement>) {
+    setIsMenuOpen(false);
+
+    if (window.location.pathname !== "/") {
+      return;
+    }
+
+    event.preventDefault();
+
+    if (window.location.hash) {
+      window.history.replaceState(
+        window.history.state,
+        "",
+        `${window.location.pathname}${window.location.search}`,
+      );
+    }
+
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
+  }
+
   return (
     <header className="site-load-header fixed inset-x-0 top-0 z-50 border-b border-brand-ink/10 bg-brand-paper/95 text-brand-ink backdrop-blur-xl">
-      <nav className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8">
-        <a
-          href="#"
+      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 sm:px-8 lg:h-24">
+        <Link
+          href="/"
+          replace
           aria-label="Przejdź na początek strony"
-          className="relative h-14 w-48 overflow-hidden transition-opacity hover:opacity-80"
-          onClick={() => setIsMenuOpen(false)}
+          className="flex h-18 w-52 items-center transition-opacity hover:opacity-80 sm:w-56 lg:h-22 lg:w-64"
+          onClick={handleLogoClick}
         >
           <Image
-            src="/01_logo_poziome_przezroczyste.png"
+            src="/logo/01_logo_poziome_przezroczyste.svg"
             alt={siteOwner}
-            width={3200}
-            height={920}
-            priority
-            sizes="280px"
-            className="absolute left-0 top-1/2 h-auto w-[280px] max-w-none -translate-y-1/2"
+            width={2200}
+            height={720}
+            preload
+            sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 208px"
+            className="h-auto w-full"
           />
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-5 text-xs font-bold uppercase tracking-[0.12em] md:flex lg:gap-7">
           {navItems.filter((item) => item.href !== "#contact").map((item) => (
@@ -39,7 +66,7 @@ export function Header() {
           ))}
           <a
             href="#contact"
-            className="bg-brand-ink px-5 py-3 text-white transition-colors hover:bg-brand-green"
+            className="bg-brand-green px-5 py-3 text-white transition-colors hover:bg-brand-purple"
           >
             Porozmawiajmy
           </a>
@@ -89,7 +116,7 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
               className={`border px-4 py-3 transition-colors ${
                 item.href === "#contact"
-                  ? "border-brand-ink bg-brand-ink text-white hover:bg-brand-green"
+                  ? "border-brand-green bg-brand-green text-white hover:bg-brand-purple"
                   : "border-brand-ink/10 hover:border-brand-green hover:text-brand-green"
               }`}
             >

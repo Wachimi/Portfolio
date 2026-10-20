@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteOwner } from "@/data/portfolio";
+import { HeroPointerEffect } from "./HeroPointerEffect";
 
 const heroTechnologies = [
   "HTML",
@@ -12,7 +13,7 @@ const heroTechnologies = [
 
 export function HeroSection() {
   return (
-    <section className="relative isolate overflow-hidden bg-brand-paper pt-18 sm:pt-20">
+    <section className="relative isolate overflow-hidden bg-brand-paper pt-20 lg:pt-24">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 left-0 -z-10 w-full overflow-hidden lg:w-[72%]"
@@ -26,27 +27,23 @@ export function HeroSection() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute inset-y-0 right-0 -z-10 hidden w-[34%] bg-brand-lime lg:block"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute right-[25%] top-0 -z-10 hidden h-full w-32 origin-top -skew-x-12 bg-brand-green lg:block"
+        className="hero-brand-panels absolute inset-0 -z-10 hidden lg:block"
       />
       <Image
-        src="/06_symbol_AK_kod_przezroczysty.png"
+        src="/logo/06_symbol_AK_kod_przezroczysty.svg"
         alt=""
-        width={3072}
-        height={3072}
-        priority
-        sizes="(min-width: 1024px) 620px, 320px"
+        width={1024}
+        height={1024}
+        sizes="(min-width: 1280px) 560px, 38vw"
         aria-hidden="true"
-        className="pointer-events-none absolute -right-20 top-1/2 -z-10 hidden h-auto w-[min(54vw,720px)] -translate-y-1/2 opacity-30 mix-blend-multiply lg:block"
+        className="pointer-events-none absolute right-0 top-1/2 -z-10 hidden h-auto w-[min(38vw,560px)] -translate-y-1/2 opacity-30 mix-blend-screen lg:block"
       />
+      <HeroPointerEffect />
 
-      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-4.5rem)] max-w-6xl flex-col justify-center px-5 py-16 sm:min-h-[calc(100svh-5rem)] sm:px-8 lg:py-24">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-5rem)] max-w-6xl flex-col justify-center px-5 py-16 sm:px-8 lg:min-h-[calc(100svh-6rem)] lg:py-24">
         <div className="site-load-up max-w-[640px]">
           <p className="mb-6 flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green">
-            <span className="h-0.5 w-10 bg-brand-lime" />
+            <span className="h-0.5 w-10 bg-brand-purple" />
             {siteOwner} · Web Developer
           </p>
           <h1 className="text-4xl font-black leading-[0.98] tracking-[-0.04em] text-brand-ink sm:text-6xl lg:text-7xl">
@@ -59,13 +56,13 @@ export function HeroSection() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center bg-brand-ink px-7 py-4 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition-colors hover:bg-brand-green"
+              className="inline-flex items-center justify-center bg-brand-green px-7 py-4 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition-colors hover:bg-brand-purple"
             >
               Zobacz realizacje
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center justify-center border-2 border-brand-ink px-7 py-4 text-sm font-extrabold uppercase tracking-[0.12em] text-brand-ink transition-colors hover:bg-brand-lime"
+              className="inline-flex items-center justify-center border-2 border-brand-ink px-7 py-4 text-sm font-extrabold uppercase tracking-[0.12em] text-brand-ink transition-colors hover:border-brand-green hover:bg-brand-green-soft"
             >
               Porozmawiajmy
             </a>

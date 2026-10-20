@@ -13,7 +13,7 @@ export function AboutSection() {
             Technologia, która wspiera konkretny cel.
           </h2>
         </div>
-        <div className="border-l-4 border-brand-lime pl-6 sm:pl-9">
+        <div className="border-l-4 border-brand-green pl-6 sm:pl-9">
           <p className="text-2xl font-bold leading-tight text-brand-ink">
             Od początku swojej zawodowej pracy tworzę strony internetowe.
             Zaczynałem od pracy z&nbsp;frameworkiem WordPress, teraz skupiam
