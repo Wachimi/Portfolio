@@ -68,7 +68,7 @@ export function Header() {
             href="#contact"
             className="bg-brand-green px-5 py-3 text-white transition-colors hover:bg-brand-purple"
           >
-            Porozmawiajmy
+            Kontakt
           </a>
         </div>
 

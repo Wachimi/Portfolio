@@ -22,7 +22,7 @@ export function AboutSection() {
             Od początku swojej zawodowej pracy tworzę strony internetowe.
             Zaczynałem od pracy z&nbsp;frameworkiem WordPress, teraz skupiam
             się na pisaniu własnych stron i&nbsp;aplikacji od podstaw w&nbsp;JS/TS
-            z&nbsp;wykorzystaniem React i&nbsp;Next.js / Vite.
+            z&nbsp;wykorzystaniem React.
           </p>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-brand-ink/65">
             Lubię pracować etapami: najpierw dobra struktura, potem czytelny

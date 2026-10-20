@@ -5,14 +5,11 @@ export const navItems = [
   { href: "#projects", label: "Realizacje" },
   { href: "#skills", label: "Technologie" },
   { href: "#about", label: "O\u00A0mnie" },
-  { href: "#cv", label: "CV" },
   { href: "#contact", label: "Kontakt" },
 ];
 
-export const cvFile = {
-  href: "/cv/andrzej-kusnierz-cv.pdf",
-  filename: "andrzej-kusnierz-cv.pdf",
-};
+export const cvRequestHref =
+  "mailto:a.kusnierz.work@icloud.com?subject=Pro%C5%9Bba%20o%20CV&body=Dzie%C5%84%20dobry%2C%0A%0Aprosz%C4%99%20o%20przes%C5%82anie%20aktualnego%20CV.%0A%0APozdrawiam";
 
 export const skills = [
   "HTML",

@@ -1,4 +1,4 @@
-import { cvFile } from "@/data/portfolio";
+import { cvRequestHref } from "@/data/portfolio";
 
 export function CvSection() {
   return (
@@ -15,8 +15,8 @@ export function CvSection() {
             Poznaj moje doświadczenie
           </h2>
           <p className="mt-5 max-w-xl text-lg leading-8 text-brand-ink/65">
-            Przygotowałem wersję PDF z&nbsp;najważniejszymi informacjami
-            o&nbsp;doświadczeniu zawodowym, technologiach i&nbsp;umiejętnościach.
+            Pełne CV udostępniam zainteresowanym osobom po bezpośrednim
+            kontakcie. Napisz do mnie, a&nbsp;prześlę aktualną wersję dokumentu.
           </p>
         </div>
 
@@ -27,16 +27,15 @@ export function CvSection() {
         >
           <div className="mb-8 border-l-4 border-brand-green pl-5">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-green">
-              Plik PDF
+              CV dostępne na życzenie
             </p>
           </div>
 
           <a
-            href={cvFile.href}
-            download={cvFile.filename}
+            href={cvRequestHref}
             className="inline-flex w-full items-center justify-center bg-brand-green px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition-colors hover:bg-brand-purple sm:w-auto"
           >
-            Pobierz CV
+            Poproś o&nbsp;CV
           </a>
         </div>
       </div>
