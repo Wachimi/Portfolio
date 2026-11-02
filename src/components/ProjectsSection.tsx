@@ -30,9 +30,11 @@ function ProjectCardContent({ project }: { project: Project }) {
             </p>
           ) : null}
         </div>
-        <p className="mt-8 leading-7 text-brand-ink/65">
-          {project.description}
-        </p>
+        <div data-nosnippet>
+          <p className="mt-8 leading-7 text-brand-ink/65">
+            {project.description}
+          </p>
+        </div>
         <span className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.14em] text-brand-green transition-colors group-hover:text-brand-ink">
           {project.href ? "Zobacz projekt ↗" : "W przygotowaniu"}
         </span>

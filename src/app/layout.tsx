@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "AK-dev | Strony i aplikacje internetowe na zamówienie",
   description:
-    "Projektowanie i wdrażanie nowoczesnych stron oraz aplikacji internetowych.",
+    "Tworzę nowoczesne strony firmowe, landing page i aplikacje internetowe z CMS. Indywidualne wdrożenia, rozwój, integracje oraz opieka techniczna.",
   icons: {
     icon: [
       { url: "/logo/favicon.ico" },
