@@ -36,7 +36,7 @@ export const offerServices = [
   {
     title: "WordPress — administracja i\u00A0rozwój",
     description:
-      "Opieka nad istniejącą stroną, aktualizacje, rozbudowa funkcji i\u00A0bieżące usprawnienia bez konieczności tworzenia serwisu od nowa.",
+      "Opieka nad istniejącą stroną, aktualizacje, rozbudowa funkcji i\u00A0bieżące usprawnienia.",
   },
   {
     title: "Indywidualne projekty IT",
