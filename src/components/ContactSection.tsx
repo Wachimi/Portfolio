@@ -7,7 +7,7 @@ export function ContactSection() {
       id="contact"
       className="scroll-mt-24 border-t border-white/10 bg-brand-ink px-5 py-24 text-white sm:px-8 lg:py-32"
     >
-      <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.48fr_0.52fr] md:items-center">
+      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,0.48fr)_minmax(0,0.52fr)] lg:items-center">
         <div data-reveal="left">
           <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-green-light">
             05 / Kontakt
@@ -23,7 +23,7 @@ export function ContactSection() {
         <div
           data-reveal="right"
           data-reveal-delay="1"
-          className="space-y-5 border border-white/15 bg-white p-6 text-brand-ink sm:p-8"
+          className="min-w-0 space-y-5 border border-white/15 bg-white p-6 text-brand-ink sm:p-8"
         >
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-green">
             Dane kontaktowe
@@ -39,14 +39,14 @@ export function ContactSection() {
                     ? "noopener noreferrer"
                     : undefined
                 }
-                className="flex items-center gap-4 border-b border-brand-line pb-4 text-brand-ink transition-colors last:border-b-0 last:pb-0 hover:text-brand-green"
+                className="flex min-w-0 items-center gap-4 border-b border-brand-line pb-4 text-brand-ink transition-colors last:border-b-0 last:pb-0 hover:text-brand-green"
               >
                 <ContactIcon icon={link.icon} />
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-green">
                     {link.label}
                   </p>
-                  <span className="mt-1 block break-words text-lg font-bold sm:text-xl">
+                  <span className="mt-1 block text-lg font-bold [overflow-wrap:anywhere] sm:text-xl">
                     {link.value}
                   </span>
                 </div>
